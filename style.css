@@ -1,0 +1,219 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .description {
+        margin-bottom: 25px;
+    }
+    
+    .container {
+        margin: auto;
+        max-width: 90%;
+    }
+    
+    .container .row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .description .heading h1 {
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: bold;
+        margin: 20px 0px 40px 0px;
+        letter-spacing: -0.045em;
+    }
+    
+    .description .team-body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .description .team-body p {
+        font-size: 14px;
+    }
+    
+    .description .heading h3 {
+        text-transform: uppercase;
+    }
+    
+    .description .team-body h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+    .team .container {
+        margin: 0px;
+    }
+    
+    .team .container .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .container {
+        display: flex;
+    }
+    
+    .team .container .teammates {
+        width: 40%;
+    }
+    
+    .teammates {
+        margin-bottom: 75px;
+    }
+    
+    .images {
+        position: relative;
+    }
+    
+    .images img {
+        box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.35);
+        border-radius: 5px;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    span {
+        position: absolute;
+        top: 0;
+        right: -20px;
+        writing-mode: vertical-lr;
+        font-size: 10px;
+        line-height: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    
+    .teammates p {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 15px;
+    }
+    
+    .teammates:nth-child(2),
+    .teammates:nth-child(4),
+    .teammates:nth-child(6) {
+        position: relative;
+        top: 75px;
+    }
+    
+    @media (min-width: 992px) {
+        .description {
+            margin: 100px 0px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .container {
+            max-width: 992px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .container .row {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .description .heading {
+            flex: 1;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .description .heading h1 {
+            margin: 0;
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .description .team-body {
+            flex: 1;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .description .team-body h3 {
+            margin-bottom: 10px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .description .team-body h3,
+        .description .team-body p {
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .team .container {
+            margin: 0 auto;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .team .container .row {
+            justify-content: unset;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .team .container .row .teammates {
+            flex-grow: 1;
+            width: 33%;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .teammates p {
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .teammates:nth-child(2),
+        .teammates:nth-child(4),
+        .teammates:nth-child(6) {
+            position: relative;
+            top: 0px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .teammates:nth-child(2),
+        .teammates:nth-child(5) {
+            position: relative;
+            top: 75px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .teammates .images img {
+            width: 75%;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .images>span {
+            right: 60px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
